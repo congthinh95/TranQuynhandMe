@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/player.css">
+      <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+      <title>Together</title>
+      <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">♡</div>
+            <div class="snowflake">♥</div>
+      </div>
+
+      <style>
+            @-webkit-keyframes snowflakes-fall {
+                  0% {
+                        top: -10%
+                  }
+
+                  100% {
+                        top: 100%
+                  }
+            }
+
+            @-webkit-keyframes snowflakes-shake {
+
+                  0%,
+                  100% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0)
+                  }
+
+                  50% {
+                        -webkit-transform: translateX(80px);
+                        transform: translateX(80px)
+                  }
+            }
+
+            @keyframes snowflakes-fall {
+                  0% {
+                        top: -10%
+                  }
+
+                  100% {
+                        top: 100%
+                  }
+            }
+
+            @keyframes snowflakes-shake {
+
+                  0%,
+                  100% {
+                        transform: translateX(0)
+                  }
+
+                  50% {
+                        transform: translateX(80px)
+                  }
+            }
+
+            .snowflake {
+                  color: #fff;
+                  font-size: 1em;
+                  font-family: Arial, sans-serif;
+                  text-shadow: 0 0 5px #000;
+                  position: fixed;
+                  top: -10%;
+                  z-index: 9999;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  cursor: default;
+                  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+                  -webkit-animation-duration: 10s, 3s;
+                  -webkit-animation-timing-function: linear, ease-in-out;
+                  -webkit-animation-iteration-count: infinite, infinite;
+                  -webkit-animation-play-state: running, running;
+                  animation-name: snowflakes-fall, snowflakes-shake;
+                  animation-duration: 10s, 3s;
+                  animation-timing-function: linear, ease-in-out;
+                  animation-iteration-count: infinite, infinite;
+                  animation-play-state: running, running;
+            }
+
+            .snowflake:nth-of-type(0) {
+                  left: 1%;
+                  -webkit-animation-delay: 0s, 0s;
+                  animation-delay: 0s, 0s
+            }
+
+            .snowflake:nth-of-type(1) {
+                  left: 10%;
+                  -webkit-animation-delay: 1s, 1s;
+                  animation-delay: 1s, 1s
+            }
+
+            .snowflake:nth-of-type(2) {
+                  left: 20%;
+                  -webkit-animation-delay: 6s, .5s;
+                  animation-delay: 6s, .5s
+            }
+
+            .snowflake:nth-of-type(3) {
+                  left: 30%;
+                  -webkit-animation-delay: 4s, 2s;
+                  animation-delay: 4s, 2s
+            }
+
+            .snowflake:nth-of-type(4) {
+                  left: 40%;
+                  -webkit-animation-delay: 2s, 2s;
+                  animation-delay: 2s, 2s
+            }
+
+            .snowflake:nth-of-type(5) {
+                  left: 50%;
+                  -webkit-animation-delay: 8s, 3s;
+                  animation-delay: 8s, 3s
+            }
+
+            .snowflake:nth-of-type(6) {
+                  left: 60%;
+                  -webkit-animation-delay: 6s, 2s;
+                  animation-delay: 6s, 2s
+            }
+
+            .snowflake:nth-of-type(7) {
+                  left: 70%;
+                  -webkit-animation-delay: 2.5s, 1s;
+                  animation-delay: 2.5s, 1s
+            }
+
+            .snowflake:nth-of-type(8) {
+                  left: 80%;
+                  -webkit-animation-delay: 1s, 0s;
+                  animation-delay: 1s, 0s
+            }
+
+            .snowflake:nth-of-type(9) {
+                  left: 90%;
+                  -webkit-animation-delay: 3s, 1.5s;
+                  animation-delay: 3s, 1.5s
+            }
+
+            .snowflake:nth-of-type(10) {
+                  left: 25%;
+                  -webkit-animation-delay: 2s, 0s;
+                  animation-delay: 2s, 0s
+            }
+
+            .snowflake:nth-of-type(11) {
+                  left: 65%;
+                  -webkit-animation-delay: 4s, 2.5s;
+                  animation-delay: 4s, 2.5s
+            }
+      </style>
+</head>
+
+<body>
+      <div id="wrapper">
+            <h1>NHIÊU NGÀY RỒI TA !?</h1>
+            <div id="clock-box">
+                  <div id="clock">
+                        <date>0 NGÀY</date>
+                        <time>00:00:00</time>                                 
+                  </div>
+            </div>
+            <div id="info">
+                  <div class="one">
+                        <img src="img/me.jpg" class="avt">
+                        <p>Anh</p>
+                  </div>
+                  <div id="heart">
+                        ❤
+                        <anni>...</anni>                 
+                        <anni>First meet: 14-01-2023</anni> 
+                  </div>                  
+                  <div class="two">
+                        <img src="img/fie.jpg" class="avt">
+                        <p>Bé</p>
+                  </div>
+            </div>
+
+            <div id="music">
+                  <audio>Your browser does not support the audio element.</audio>
+            </div>
+
+            <div id="app-cover">
+                  <div id="player">
+                        <div id="player-track">
+                              <div id="album-name"></div>
+                              <div id="track-name"></div>
+                              <div id="track-time">
+                                    <div id="current-time"></div>
+                                    <div id="track-length"></div>
+                              </div>
+                              <div id="s-area">
+                                    <div id="ins-time"></div>
+                                    <div id="s-hover"></div>
+                                    <div id="seek-bar"></div>
+                              </div>
+                        </div>
+                        <div id="player-content">
+                              <div id="album-art">
+                                    <img src="img/artwork/sparkle.jpg" class="active" id="_1">
+                                    <img src="img/artwork/muffin.jpg" id="_2">
+                                    <div id="buffer-box">Buffering ...</div>
+                              </div>
+                              <div id="player-controls">
+                                    <div class="control">
+                                          <div class="button" id="play-previous">
+                                                <i class="fas fa-backward"></i>
+                                          </div>
+                                    </div>
+                                    <div class="control">
+                                          <div class="button" id="play-pause-button">
+                                                <i class="fas fa-play"></i>
+                                          </div>
+                                    </div>
+                                    <div class="control">
+                                          <div class="button" id="play-next">
+                                                <i class="fas fa-forward"></i>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+
+            <footer>
+                  <h6>💕 Cảm ơn em vì đã đến bên anh! 💕</h6>
+            </footer>
+      </div>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src="js/app.js"></script>
+      <script src="js/player.js"></script>
+      <!-- <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> -->
+      <!-- <script>
+           console.log("Hello world!"); 
+        const firebaseConfig = {
+        apiKey: "AIzaSyAFO3lJOmnYZUK1XM1khX3aDPqOzv-eQuY",
+        authDomain: "totinhdemfie.firebaseapp.com",
+        databaseURL: "https://totinhdemfie-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "totinhdemfie",
+        storageBucket: "totinhdemfie.appspot.com",
+        messagingSenderId: "559311784672",
+        appId: "1:559311784672:web:2fc4053cc236c1f4e61e85",
+        measurementId: "G-4PNWDQ66BH"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+        </script>
+        <script>
+            var starCountRef = firebase.database().ref('config/trigger');
+            starCountRef.on('value', (snapshot) => {
+            const data = snapshot.val();        
+            Console.Log (data);
+            });
+
+        </script> -->
+</body>
+
+</html>
